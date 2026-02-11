@@ -1,0 +1,21 @@
+FROM nvidia/cuda:12.1.0-runtime-ubuntu22.04
+
+RUN apt-get update && apt-get install -y \
+    python3.10 \
+    python3-pip \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install Boltz weights and dependencies
+COPY boltz_repo /boltz_repo
+RUN cd /boltz_repo && pip install -e .[cuda]
+
+# Copy backend code for the worker to use the same models/db logic
+COPY backend/requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY backend/ .
+
+ENV PYTHONPATH=/app

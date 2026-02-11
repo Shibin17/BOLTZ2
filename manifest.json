@@ -1,0 +1,16 @@
+{
+  "current_step": "Documentation and Delivery",
+  "status": "completed",
+  "session_dir": "/app/sandbox/session_20260211_104554_d675a515d93c",
+  "created": "1770787177.5694735",
+  "outputs": [
+    "/app/sandbox/session_20260211_104554_d675a515d93c/backend/",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/frontend/",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/docker-compose.yml",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/Dockerfile.worker",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/README.md",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/reports/Technical_Report.md",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/reports/User_Guide.md",
+    "/app/sandbox/session_20260211_104554_d675a515d93c/boltz_repo/"
+  ]
+}
